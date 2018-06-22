@@ -1,13 +1,12 @@
 # Arduino Kitchen Scale with binary display
 
-# Parts
+## Parts
 
-1. `Arduino Nano` with ATmega328
-2. `HX711` Load cell amplifier
-3. `Straight bar load cell (2kg)`
-4. `Charlieplexed led array with 12 leds`
+1. 1x HX711 Load cell amplifier
+3. 1x Straight bar load cell (2kg)
+4. 1x Charlieplexed led array with 12 leds *(See schematics)*
 
-# Requirements
+## Requirements
 
 1. [HX711_ADC](https://github.com/olkal/HX711_ADC) library
 2. [CHPLX12](https://github.com/szeist/CHPLX12) library
