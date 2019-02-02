@@ -37,18 +37,19 @@ Update the `DEFAULT_CAL_FACTOR` in the `firmware.ino` with the new CalFactor val
 
 ### Generate gerber files for production
 
-1. Plot the following layers:
-    - F.Cu
-    - B.Cu
-    - B.SilkS
-    - F.SilkS
-    - B.Mask
-    - F.Mask
-    - Edge.Cuts
-  with options:
-    - [X] Use Protel filename extensions
-    - [ ] Include extended attributes
-    - [ ] Subtract soldermask from silkscreen
+1. Plot the PCB
+    - Layers:
+        - F.Cu
+        - B.Cu
+        - B.SilkS
+        - F.SilkS
+        - B.Mask
+        - F.Mask
+        - Edge.Cuts
+    - Options:
+        - [X] Use Protel filename extensions
+        - [ ] Include extended attributes
+        - [ ] Subtract soldermask from silkscreen
 
 2. Generate drill file with the following options:
     - **Millimeters** as drill units
