@@ -32,3 +32,27 @@ Connect to the serial port and use the following keys to adjust the measured wei
 ### 3. Update the calibration factor
 
 Update the `DEFAULT_CAL_FACTOR` in the `firmware.ino` with the new CalFactor value.
+
+## Display
+
+### Generate gerber files for production
+
+1. Plot the following layers:
+    - F.Cu
+    - B.Cu
+    - B.SilkS
+    - F.SilkS
+    - B.Mask
+    - F.Mask
+    - Edge.Cuts
+  with options:
+    - [X] Use Protel filename extensions
+    - [ ] Include extended attributes
+    - [ ] Subtract soldermask from silkscreen
+
+2. Generate drill file with the following options:
+    - **Millimeters** as drill units
+    - **Supress leading** zeros as zeros format
+    - **PostScript** as drill map format
+
+3. Rename all files with the `schematics/scripts/rename_gerber_files.sh` script
